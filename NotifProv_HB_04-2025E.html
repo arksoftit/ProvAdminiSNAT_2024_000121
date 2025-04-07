@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        .header {
+            background-color: #005883;
+            padding: 25px 0;
+            text-align: center;
+        }
+        .header img {
+            max-width: 80%;
+            height: auto;
+        }
+        .content {
+            padding: 25px;
+        }
+        h1 {
+            color: #d21016;
+            font-size: 24px;
+            text-align: center;
+            margin: 0 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+        h2 {
+            color: #005883;
+            font-size: 18px;
+            margin: 25px 0 15px 0;
+            padding-left: 10px;
+            border-left: 4px solid #d21016;
+        }
+        .intro-box {
+            background-color: #f0f7fc;
+            border-left: 4px solid #005883;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .obligaciones-section {
+            margin-bottom: 30px;
+        }
+        .obligaciones-list {
+            padding-left: 0;
+            margin: 0 0 0 20px;
+            list-style-type: none;
+            font-size: 14px;
+        }
+        .obligaciones-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 30px;
+            text-indent: -30px;
+            line-height: 1.5;
+        }
+        .obligaciones-list li:before {
+            content: counter(item, lower-alpha) ") ";
+            counter-increment: item;
+            display: inline-block;
+            width: 30px;
+            color: #d21016;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .legal-ref {
+            color: #666;
+            font-style: italic;
+            font-size: 12px;
+        }
+        .download-btn {
+            background-color: #d21016;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #b00e14;
+        }
+        .disclaimer {
+            font-size: 11px;
+            color: #777;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #005883;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .date {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin: 0 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.imgur.com/0LhhAdY.png" alt="Homologación SENIAT">
+        </div>
+        
+        <div class="content">
+            <h1>Homologación y Cumplimiento Normativo</h1>
+            <p class="date"><strong>Fecha:</strong> ABRIL 2025</p>
+            
+            <div class="intro-box">
+                <p>Estimado cliente,</p>
+                <p>La Providencia Administrativa SNAT/2024/000121 establece nuevos requisitos obligatorios para sistemas de facturación. A continuación detallamos las responsabilidades clave:</p>
+            </div>
+
+            <div class="obligaciones-section">
+                <h2>Obligaciones para Proveedores/Distribuidores</h2>
+                <ol class="obligaciones-list" style="counter-reset: item;">
+                    <li>Proveer e instalar exclusivamente sistemas homologados por el SENIAT.</li>
+                    <li>Capacitar a los usuarios en el uso correcto del sistema y normativas fiscales vigentes.</li>
+                    <li>Informar sobre actualizaciones requeridas por el ente regulador (SENIAT).</li>
+                    <li>Realizar inspección técnica previa a los equipos de instalación.</li>
+                    <li>Brindar asistencia técnica para el correcto funcionamiento del sistema.</li>
+                    <li>Impedir conexión con dispositivos no homologados que permitan desvío de registros fiscales.</li>
+                    <li>Notificar al SENIAT alteraciones no autorizadas <span class="legal-ref">(Artículo 8.4)</span>.</li>
+                </ol>
+            </div>
+
+            <div class="obligaciones-section">
+                <h2>Obligaciones del Cliente/Usuario</h2>
+                <ol class="obligaciones-list" style="counter-reset: item;">
+                    <li>Usar el software únicamente para documentos fiscales válidos, sin modificaciones.</li>
+                    <li>No instalar complementos que afecten la trazabilidad fiscal <span class="legal-ref">(Artículo 12)</span>.</li>
+                    <li>Reportar errores técnicos que comprometan la integridad de los datos.</li>
+                    <li>Asumir sanciones por mal uso del software <span class="legal-ref">(Disposición Final Quinta)</span>.</li>
+                </ol>
+            </div>
+            
+            <center>
+                <a href="https://app.box.com/s/8qtrduyvhws4475dzd3hec52bq04ved7" class="download-btn">Descargar Gaceta Oficial No. 43032</a>
+                <p class="disclaimer">(Será redirigido a Box.com para la descarga)</p>
+            </center>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 Arksoft Integradores de Sistemas, C.A. RIF: J310994692</p>
+            <p>Contacto: +58 424-3672111 | arksoft.hybrid@outlook.com</p>
+        </div>
+    </div>
+</body>
+</html>

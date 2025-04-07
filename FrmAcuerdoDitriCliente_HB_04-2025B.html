@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ACUERDO DE RESPONSABILIDADES Y USO DEL SOFTWARE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #005883;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #005883;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #003d5c;
+        }
+        .form-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+            margin-top: 20px;
+        }
+        .empresa-info {
+            margin-bottom: 30px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333333;
+        }
+        .empresa-info strong {
+            color: #005883;
+        }
+        .firmas-table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        .firmas-table td {
+            width: 50%;
+            text-align: center;
+            vertical-align: top;
+        }
+        .firmas-table hr {
+            width: 80%;
+            margin: 5px auto;
+            border: 0;
+            border-top: 1px solid #000;
+        }
+        .firmas-table p {
+            font-size: 14px;
+            margin: 2px 0; /* Reducir el interlineado */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>ACUERDO DE RESPONSABILIDADES Y USO DEL SOFTWARE</h1>
+        <!-- Información de la Empresa Distribuidora -->
+        <div class="empresa-info">
+            <p><strong>PROVEEDOR DE SOFTWARE:</strong> ARKSOFT INTEGRADORES DE SISTEMAS, C.A.</p>
+            <p><strong>RIF:</strong> J310994692</p>
+            <p><strong>Representante Legal:</strong> JUAN ERNESTO PAEZ MUJICA</p>
+            <p><strong>Cédula de Identidad:</strong> V5452715</p>
+            <p><strong>Domicilio Fiscal:</strong> Caracas</p>
+        </div>
+        <form id="cliente-form" action="#" method="post">
+            <!-- Ciudad y Fecha -->
+            <div>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ejemplo: Caracas" required>
+            </div>
+            <div>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <!-- Datos del Cliente -->
+            <h2>Datos del Cliente</h2>
+            <div>
+                <label for="cliente_nombre">Nombre del Cliente:</label>
+                <input type="text" id="cliente_nombre" name="cliente_nombre" placeholder="Ejemplo: Juan Pérez" required>
+            </div>
+            <div>
+                <label for="cliente_rif">RIF del Cliente:</label>
+                <input type="text" id="cliente_rif" name="cliente_rif" placeholder="Ejemplo: V123456789" required>
+            </div>
+            <div>
+                <label for="cliente_representante">Representante Legal:</label>
+                <input type="text" id="cliente_representante" name="cliente_representante" placeholder="Nombre completo del representante" required>
+            </div>
+            <div>
+                <label for="cliente_cedula">Cédula del Representante:</label>
+                <input type="text" id="cliente_cedula" name="cliente_cedula" placeholder="Ejemplo: V1234567" required>
+            </div>
+            <div>
+                <label for="cliente_cargo">Cargo del Representante:</label>
+                <input type="text" id="cliente_cargo" name="cliente_cargo" placeholder="Ejemplo: Gerente General" required>
+            </div>
+            
+            <div>
+                <label for="cliente_domicilio">Domicilio Fiscal:</label>
+                <textarea id="cliente_domicilio" name="cliente_domicilio" rows="2" placeholder="Dirección completa del cliente" required></textarea>
+            </div>
+            <!-- Botón de Envío -->
+            <button type="submit" class="button">Generar Acuerdo</button>
+        </form>
+        <div class="form-footer">
+            <p>Todos los campos son obligatorios.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('cliente-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Evita que el formulario se envíe
+            // Obtener valores del formulario
+            const ciudad = document.getElementById('ciudad').value;
+            const fecha = document.getElementById('fecha').value;
+            const clienteNombre = document.getElementById('cliente_nombre').value;
+            const clienteRif = document.getElementById('cliente_rif').value;          
+            const clienteRepresentante = document.getElementById('cliente_representante').value;
+            const clienteCedula = document.getElementById('cliente_cedula').value;
+            const clienteCargo = document.getElementById('cliente_cargo').value;            
+            const clienteDomicilio = document.getElementById('cliente_domicilio').value;
+
+            // Crear el contenido del documento
+            const contenidoDocumento = `
+                <h1 style="text-align: center; color: #005883;">ACUERDO DE RESPONSABILIDADES Y USO DEL SOFTWARE</h1>
+                <p>En la ciudad de <strong>${ciudad}</strong>, el día <strong>${fecha}</strong>, entre:</p>
+                <p><strong>PROVEEDOR DE SOFTWARE:</strong> ARKSOFT INTEGRADORES DE SISTEMAS, C.A.<br>
+                Representada por: JUAN ERNESTO PAEZ MUJICA, Titular de la C.I.: V5452715, en su carácter de Gerente General<br>
+                con domicilio fiscal en: Caracas;</p>
+                <p>y</p>
+                <p><strong>CLIENTE:</strong> ${clienteNombre} - RIF No. ${clienteRif}<br>
+                Representada por: ${clienteRepresentante}, Titular de la C.I.: ${clienteCedula}, en su carácter de ${clienteCargo}
+                con domicilio en la ciudad de ${clienteDomicilio};</p>
+                <p>Se acuerda celebrar el presente documento bajo las siguientes cláusulas:</p>
+                <h2>Definiciones</h2>
+                <ol>
+                    <li><strong>Software Administrativo:</strong> El software administrativo es un conjunto de programas informáticos diseñados para facilitar la gestión de las operaciones y procesos administrativos de una organización. Este tipo de software puede incluir módulos para la facturación, control de inventarios, gestión de recursos humanos, contabilidad, y más. Su objetivo es mejorar la eficiencia, reducir errores y proporcionar información en tiempo real para la toma de decisiones.</li>
+                    <li><strong>Software Homologado:</strong> Según la Providencia SNAT/2024/000121, el software homologado es aquel que ha sido evaluado y autorizado por el SENIAT para su uso en la emisión de facturas y otros documentos fiscales. Este software debe cumplir con una serie de requisitos técnicos y de seguridad que garantizan la integridad, confiabilidad y accesibilidad de los registros fiscales.</li>
+                    <li><strong>Proveedor del Software:</strong> Todas las personas naturales, las sociedades cooperativas y personas jurídicas domiciliadas en el país, que sean proveedores de sistemas informáticos utilizados para la emisión de facturas y otros documentos fiscales.</li>
+                    <li><strong>Cliente:</strong> Todos los sujetos pasivos que estén obligados a utilizar solo sistemas informáticos autorizados y homologados por el Servicio Nacional Integrado de Administración Aduanera y Tributaria (SENIAT) para la emisión de facturas y otros documentos fiscales.</li>
+                    <li><strong>Usuario:</strong> Un usuario es la persona que utiliza un producto o servicio de forma habitual. En el contexto de un sistema administrativo, el usuario es quien interactúa con el software para realizar tareas específicas.</li>
+                    <li><strong>SENIAT:</strong> El Servicio Nacional Integrado de Administración Aduanera y Tributaria (SENIAT) es el órgano encargado de la administración tributaria en Venezuela. Su función principal es la recaudación de impuestos y la regulación de las actividades aduaneras.</li>
+                </ol>
+                <h2>Obligaciones para Proveedores/Distribuidores</h2>
+                <ol>
+                    <li>En Proveedores o distribuidor de Software, asume el compromiso de proporcionar e instalar solo sistemas Homologados por el SENIAT.</li>
+                    <li>Informar y capacitar a los usuarios en la correcta utilización del sistema para dar fiel cumplimientos de las normativas vigentes y destacar las bligaciones fiscales relacionadas con la emisión de documentos fiscales.</li>
+                    <li>En Proveedores o distribuidor de Software se compromete a mantener informado a los usuarios sobre las actualizaciones y modificaciones que se realicen al sistema con el objeto de dar cumplimiento a las disposiciones emanadas por el ente regulador (SENIAT).</li>
+                    <li>En Proveedores o distribuidor de Software se compromete a realizar una inspección técnica a los equipos en los cuales se hará las instalación del sistema Homologado.</li>
+                    <li>Brindar asistencia para la correcta operación del sistema, en pro del cumplimiento de lo establecido en esta providencia.</li>
+                    <li>No proporcionar programas o soluciones alternas ni permitir la conexión ningún equipo o dispositivo no fiscal o no homologado por el SENIAT que permitan el desvío de los registros de facturas y otros documentos fiscales para que no se incluyan en las declaraciones tributarias que deben realizar los sujetos pasivos.</li>
+                    <li>Informar al SENIAT si detecta alteraciones no autorizadas por parte del CLIENTE (Artículo 8.4).</li>
+                </ol>
+                <h2>Obligaciones del Cliente/Usuario</h2>
+                <p>El CLIENTE se compromete a:</p>
+                <ol>
+                    <li>El cliente debe adecuar sus procesos gerenciales, operativos y administrativos para dar fiel cumplimiento a todo lo establecido en la normativa vigente, con especial observación en la Providencia SNAT/2024/000121.</li>
+                    <li>Utilizar el software exclusivamente para la emisión de documentos fiscales válidos, sin alterar su código, lógica o registros.</li>
+                    <li>No instalar parches, módulos externos o herramientas que interfieran con la trazabilidad fiscal (Artículo 12).</li>
+                    <li>Reportar al PROVEEDOR cualquier error técnico que afecte la integridad de los datos fiscales.</li>
+                    <li>Responsabilidad fiscal: Asumir las sanciones tributarias, penales o administrativas derivadas del mal uso del software (Disposición Final Quinta).</li>
+                </ol>
+                <h2>Responsabilidades Solidarias</h2>
+                <p>En el Artículo 12 se establece que:</p>
+                <blockquote>
+                    “Son responsables tanto el desarrollador como el proveedor de sistemas informáticos para la emisión de facturas y otros documentos fiscales, si los usuarios realizan cualquier cambio, actualización o modificación de los sistemas informáticos que no hayan sido autorizados y homologados por el Servicio Nacional Integrado de Administración Aduanera y Tributaria (SENIAT).”
+                </blockquote>
+                <p>Por lo tanto, el Cliente/Usuario acepta “No realizar alteraciones no autorizadas” ya que:</p>
+                <p>Si el CLIENTE modifica el software y ello genera evasión fiscal, el PROVEEDOR notificará al SENIAT y quedará exento de responsabilidad siempre que:</p>
+                <ul>
+                    <li>Haya incluido esta cláusula en el acuerdo.</li>
+                    <li>El software entregado inicialmente estuviera homologado.</li>
+                </ul>
+                <h2>Auditoría y Acceso del SENIAT:</h2>
+                <ol>
+                    <li>El CLIENTE permite que el SENIAT acceda al sistema para auditorías, conforme al Artículo 3(h).</li>
+                    <li>Ambas partes colaborarán con el SENIAT en inspecciones o requerimientos de información.</li>
+                </ol>
+                <h2>Confidencialidad y Datos:</h2>
+                <ol>
+                    <li>El PROVEEDOR garantiza el cifrado de información fiscal, pero el CLIENTE es responsable de respaldar sus datos.</li>
+                    <li>El PROVEEDOR podrá monitorear logs o registros de auditoría para detectar usos fraudulentos.</li>
+                </ol>
+                <table class="firmas-table">
+                    <tr>                        
+                        <td>
+                            <p>________________________________________</p>
+                            <hr>
+                            <p><strong>${clienteNombre}</strong></p>
+                            <p>${clienteRepresentante}</p>
+                            <p>${clienteCargo}</p>
+                        </td>
+                        <td>
+                            <p>________________________________________</p>
+                            <hr>
+                            <p><strong>ARKSOFT INTEGRADORES DE SISTEMAS, C.A.</strong></p>
+                            <p>JUAN ERNESTO PAEZ MUJICA</p>
+                            <p>Gerente General</p>
+                        </td>
+                    </tr>
+                </table>
+            `;
+            // Mostrar el documento en una nueva ventana
+            const ventana = window.open('', '_blank');
+            ventana.document.write('<html><head><title>Acuerdo Generado</title></head><body>');
+            ventana.document.write(contenidoDocumento);
+            ventana.document.write('</body></html>');
+            ventana.document.close();
+        });
+    </script>
+</body>
+</html>

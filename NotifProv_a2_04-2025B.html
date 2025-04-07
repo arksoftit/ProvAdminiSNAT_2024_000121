@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333333;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f5f7fa;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #ffffff;
+            text-align: center;
+            border-bottom: 6px solid #005883;
+            padding: 20px 0;
+            border-radius: 12px 12px 0 0;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .content {
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: #005883;
+            font-size: 26px;
+            margin-top: 0;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        h2 {
+            color: #005883;
+            font-size: 19px;
+            margin: 30px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #d21016;
+            font-weight: 600;
+        }
+        .highlight-box {
+            background-color: #f9fbfd;
+            border: 1px solid #e0e0e0;
+            padding: 18px 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        .mancheta {
+            background-color: #e7f3ff; /* Azul claro */
+            border: 1px solid #b3d4fc; /* Borde azul suave */
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #005883; /* Texto azul oscuro */
+            font-style: italic;
+        }
+        .footer {
+            background-color: #005883;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.6;
+            border-radius: 0 0 12px 12px;
+            margin-top: 25px;
+        }
+        .button {
+            background-color: #d21016;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 25px 0;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #a30e13;
+            transform: scale(1.05);
+        }
+        .obligaciones-list {
+            padding-left: 0;
+            margin: 20px 0;
+            list-style-type: none;
+            font-size: 15px;
+            counter-reset: item;
+        }
+        .obligaciones-list li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 35px;
+            line-height: 1.6;
+        }
+        .obligaciones-list li:before {
+            content: counter(item, lower-alpha) ")";
+            counter-increment: item;
+            display: inline-block;
+            width: 35px;
+            color: #005883;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        blockquote {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f9fbfd;
+            border-left: 4px solid #005883;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        /* Estilo para listas simples con símbolo "▪" */
+        .simple-list {
+            padding-left: 20px;
+            margin: 10px 0;
+            list-style-type: square; /* Usa puntos negros (▪) */
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .simple-list li {
+            margin-bottom: 10px;
+        }
+        /* Evitar que las sublistas hereden estilos de la lista principal */
+        .obligaciones-list .simple-list {
+            counter-reset: none;
+        }
+        .obligaciones-list .simple-list li:before {
+            content: none;
+        }
+        /* Restauración del estilo para "ABRIL 2025" */
+        .fecha {
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 0 25px 0;
+            font-weight: bold;
+            color: #d21016;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://imgur.com/fWGmFrM"><img src="https://i.imgur.com/fWGmFrM.jpg" title="source: imgur.com" /></a>
+    </div>
+
+    <div class="content">
+        <h1>Homologación y cumplimiento de la Providencia Administrativa SNAT/2024/000121</h1>
+        
+        <p class="fecha"><strong>ABRIL 2025</strong></p>
+        
+        <div class="highlight-box">
+            <p style="margin: 5px 0;">Estimado cliente,</p>
+            <p style="margin: 5px 0;">La nueva normativa del SENIAT establece requisitos obligatorios para sistemas de facturación. Juntos podemos garantizar el cumplimiento.</p>
+        </div>
+
+        <h2>🔹 Obligaciones para Proveedores/Distribuidores</h2>
+        <ol class="obligaciones-list">
+            <li>El Proveedor o distribuidor de Software, asume el compromiso de proporcionar e instalar solo sistemas Homologados por el SENIAT.</li>
+            <li>Informar y capacitar a los usuarios en la correcta utilización del sistema para dar fiel cumplimientos de las normativas vigentes y destacar las obligaciones fiscales relacionadas con la emisión de documentos fiscales.</li>
+            <li>El Proveedor o distribuidor de Software se compromete a mantener informado a los usuarios sobre las actualizaciones y modificaciones que se realicen al sistema con el objeto de dar cumplimiento a las disposiciones emanadas por el ente regulador (SENIAT).</li>
+            <li>El Proveedor o distribuidor de Software se compromete a realizar una inspección técnica a los equipos en los cuales se hará las instalación del sistema Homologado.</li>
+            <li>Brindar asistencia para la correcta operación del sistema, en pro del cumplimiento de lo establecido en esta providencia.</li>
+            <li>No proporcionar programas o soluciones alternas ni permitir la conexión ningún equipo o dispositivo no fiscal o no homologado por el SENIAT que permitan el desvío de los registros de facturas y otros documentos fiscales para que no se incluyan en las declaraciones tributarias que deben realizar los sujetos pasivos.</li>
+            <li>Informar al SENIAT si detecta alteraciones no autorizadas por parte del CLIENTE (Artículo 8.4).</li>
+        </ol>
+
+        <h2>🔹 Obligaciones del Cliente/Usuario</h2>
+        <div class="mancheta">
+            “El cliente debe adecuar sus procesos gerenciales, operativos y administrativos para dar fiel cumplimiento a todo lo establecido en la normativa vigente, con especial observación en la Providencia SNAT/2024/000121.”
+        </div>
+        <p>El CLIENTE se compromete a:</p>
+        <ol class="obligaciones-list">
+            <li>Utilizar el software exclusivamente para la emisión de documentos fiscales válidos, sin alterar su código, lógica o registros.</li>
+            <li>No instalar parches, módulos externos o herramientas que interfieran con la trazabilidad fiscal (Artículo 12).</li>
+            <li>Reportar al PROVEEDOR cualquier error técnico que afecte la integridad de los datos fiscales.</li>
+            <li>Responsabilidad fiscal: Asumir las sanciones tributarias, penales o administrativas derivadas del mal uso del software (Disposición Final Quinta).</li>
+        </ol>
+
+        <h2>🔹 Responsabilidades Solidarias</h2>
+        <p>En el Artículo 12 se establece que:</p>
+        <blockquote>
+            “Son responsables tanto el desarrollador como el proveedor de sistemas informáticos para la emisión de facturas y otros documentos fiscales, si los usuarios realizan cualquier cambio, actualización o modificación de los sistemas informáticos que no hayan sido autorizados y homologados por el Servicio Nacional Integrado de Administración Aduanera y Tributaria (SENIAT).”
+        </blockquote>
+        <p>Por lo tanto, el Cliente/Usuario acepta <strong>“No realizar alteraciones no autorizadas”</strong> ya que:</p>
+        <ol class="obligaciones-list">
+            <li>Si el CLIENTE modifica el software y ello genera evasión fiscal, el PROVEEDOR notificará al SENIAT y quedará exento de responsabilidad siempre que:
+                <ul class="simple-list">
+                    <li>Haya incluido esta cláusula en el acuerdo.</li>
+                    <li>El software entregado inicialmente estuviera homologado.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>🔹 Auditoría y Acceso del SENIAT</h2>
+        <ol class="obligaciones-list">
+            <li>El CLIENTE permitirá que el SENIAT acceda al sistema para auditorías, conforme al Artículo 3(h).</li>
+            <li>Ambas partes colaborarán con el SENIAT en inspecciones o requerimientos de información.</li>
+        </ol>
+
+        <h2>🔹 Confidencialidad y Datos</h2>
+        <ol class="obligaciones-list">
+            <li>El PROVEEDOR garantiza el cifrado de información fiscal, pero el CLIENTE es responsable de respaldar sus datos.</li>
+            <li>El PROVEEDOR podrá monitorear logs o registros de auditoría para detectar usos fraudulentos.</li>
+        </ol>
+        
+        
+        <center>
+            <a href="https://app.box.com/s/8qtrduyvhws4475dzd3hec52bq04ved7" class="button">Descargar Gaceta Oficial No. 43032</a>
+            <p class="disclaimer">(Será redirigido a Box.com para la descarga)</p>
+        
+            <!-- Botón para abrir el formulario -->
+            <a href="https://arksoftit.github.io/ProvAdminiSNAT_2024_000121/FormAcuerdoDistriCliente-04-2025a2APrint.html" class="button" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #005883; color: white; text-decoration: none; border-radius: 5px;">Generar Acuerdo de Responsabilidad</a>
+        </center>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Arksoft Integradores de Sistemas, C.A. RIF: J310994692 - Todos los derechos reservados</p>
+        <p>Contacto: +58 424-3672111 | arksoft.sistemas@gmail.com</p>
+    </div>
+</body>
+</html>
