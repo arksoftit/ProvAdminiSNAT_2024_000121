@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimiento Obligatorio de Verificación</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #ffffff;
+            text-align: center;
+            border-bottom: 5px solid #d21016;
+            padding: 15px 0;
+            border-radius: 8px 8px 0 0;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        .content {
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: #d21016;
+            font-size: 24px;
+            margin-top: 0;
+            text-align: center;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #eeeeee;
+        }
+        h2 {
+            color: #005883;
+            font-size: 18px;
+            margin: 25px 0 15px 0;
+            padding-left: 12px;
+            border-left: 5px solid #005883;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background-color: #e8f4fc;
+            border-left: 5px solid #005883;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .footer {
+            background-color: #005883;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 0 0 8px 8px;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #d21016;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #a30e13;
+        }
+        .obligaciones-list {
+            padding-left: 0;
+            margin: 15px 0;
+            list-style-type: none;
+            font-size: 14px;
+            counter-reset: item;
+        }
+        .obligaciones-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 30px; /* Espacio para el literal */
+            line-height: 1.5;
+        }
+        .obligaciones-list li:before {
+            content: counter(item, lower-alpha) ") ";
+            counter-increment: item;
+            display: inline-block;
+            width: 30px; /* Ancho fijo para el literal */
+            color: #005883;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .disclaimer {
+            font-size: 11px;
+            color: #666666;
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.imgur.com/0LhhAdY.png" alt="Homologación SENIAT">
+    </div>
+
+    <div class="content">
+        <h1>PROCEDIMIENTO OBLIGATORIO DE VERIFICACIÓN PREVIA A LA INSTALACIÓN O ACTUALIZACIÓN DE SOFTWARE A2 SOFTWAY</h1>
+        
+        <h2>1. Propósito:</h2>
+        <p>Este documento establece el procedimiento obligatorio que todos los Distribuidores Autorizados de A2 Softway deben seguir antes de instalar o actualizar el software en los equipos de los usuarios, con el fin de cumplir con la Providencia Administrativa SNAT/2024/000121 y evitar la instalación de licencias duplicadas o no homologadas.</p>
+        
+        <h2>2. Alcance:</h2>
+        <p>Este procedimiento aplica a todos los Distribuidores Autorizados de A2 Softway y a todos los usuarios que requieran la instalación o actualización del software.</p>
+        
+        <h2>3. Responsabilidades:</h2>
+        <ul>
+            <li><strong>Distribuidores Autorizados:</strong> Son responsables de realizar la verificación previa y de informar a los usuarios sobre las restricciones establecidas en la Providencia SNAT/2024/000121.</li>
+            <li><strong>Usuarios:</strong> Son responsables de proporcionar información veraz sobre las licencias de software que utilizan.</li>
+        </ul>
+        
+        <h2>4. Procedimiento:</h2>
+        <h3>4.1. Verificación de Licencias Existentes:</h3>
+        <ul>
+            <li>Antes de proceder con la instalación o actualización del software A2 Softway, el Distribuidor Autorizado deberá verificar si el usuario dispone de otras aplicaciones de software administrativo instaladas en su equipo (PC), red o servidor.</li>
+            <li>Esta verificación deberá incluir aplicaciones de software de la marca A2 Softway y de otras marcas.</li>
+            <li>El Distribuidor Autorizado deberá verificar que las licencias de software existentes estén personalizadas a nombre de la misma empresa que está solicitando la instalación o actualización.</li>
+        </ul>
+
+        <h3>4.2. Información al Usuario:</h3>
+        <ul>
+            <li>Si el Distribuidor Autorizado detecta que el usuario tiene instaladas dos o más licencias de software administrativo personalizadas a su nombre, deberá informarle que no puede tener en uso dos licencias simultáneamente.</li>
+            <li>El Distribuidor Autorizado deberá explicar al usuario que solo puede utilizar la licencia que esté homologada por el SENIAT, de acuerdo con los Artículos 3 y 8 de la Providencia SNAT/2024/000121.</li>
+            <li>El Distribuidor deberá documentar por escrito el aviso que se le dio al usuario y que el usuario esta consiente de que solo puede usar una licencia.</li>
+        </ul>
+
+        <h3>4.3. Documentación:</h3>
+        <ul>
+            <li>El Distribuidor Autorizado deberá documentar el resultado de la verificación previa en un registro que incluya la siguiente información:</li>
+            <ul>
+                <li>Nombre y RIF del usuario.</li>
+                <li>Fecha de la verificación.</li>
+                <li>Lista de las licencias de software encontradas.</li>
+                <li>Observaciones sobre el cumplimiento de la Providencia SNAT/2024/000121.</li>
+                <li>Firma del usuario.</li>
+            </ul>
+        </ul>
+
+        <h3>4.4. Acciones a Seguir:</h3>
+        <ul>
+            <li>Si el usuario no cumple con los requisitos de la Providencia SNAT/2024/000121, el Distribuidor Autorizado deberá abstenerse de realizar la instalación o actualización del software A2 Softway.</li>
+            <li>El distribuidor deberá notificar de inmediato a A2 Softway sobre el problema que se encontró.</li>
+        </ul>
+
+        <h2>5. Sanciones:</h2>
+        <p>El incumplimiento de este procedimiento podrá acarrear sanciones para el Distribuidor Autorizado, incluyendo la revocación de su autorización para distribuir el software A2 Softway.</p>
+
+        <h2>6. Vigencia:</h2>
+        <p>Este procedimiento entra en vigencia a partir de la fecha de su publicación y se mantendrá vigente hasta que sea modificado o derogado por A2 Softway.</p>
+
+        <h2>7. Aprobación:</h2>
+        <p>Este procedimiento ha sido aprobado por la Gerencia de [Nombre de la Gerencia] de A2 Softway.<br/>
+           Firma:<br/>
+           [Nombre del Representante Legal de A2 Softway]<br/>
+           [Cargo del Representante Legal]<br/>
+           [Fecha]</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 A2 Softway - Todos los derechos reservados</p>
+        <p>Contacto: +58 424-3672111 | info@a2softway.com</p>
+    </div>
+</body>
+</html>
